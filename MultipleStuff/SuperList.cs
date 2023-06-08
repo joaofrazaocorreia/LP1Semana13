@@ -15,10 +15,15 @@ namespace MultipleStuff
             min = sortList[0];
             max = sortList[list.Count-1];
         }
-        public void GetMinMax2()
+        public static MinMaxStruct GetMinMax2(List<double> list)
         {
+            List<double> sortList = list;
+            sortList.Sort();
+            double min = sortList[0];
+            double max = sortList[list.Count-1];
 
-        }
+            return new MinMaxStruct(min, max);
+        }     
         public void GetMinMax3()
         {
 
