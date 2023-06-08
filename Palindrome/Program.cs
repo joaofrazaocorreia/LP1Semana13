@@ -9,9 +9,9 @@ namespace Palindrome
             foreach(string s in args)
             {
                 if (CheckPalindrome(s))
-                    Console.WriteLine($"{s} is a palindrome!");
+                    Console.WriteLine($"{s} -> true");
 
-                else Console.WriteLine($"{s} is not a palindrome!");
+                else Console.WriteLine($"{s} -> false");
             }
             string nullstring = null;
             CheckPalindrome(nullstring);
