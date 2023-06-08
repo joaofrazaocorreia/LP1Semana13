@@ -7,6 +7,13 @@ namespace MultipleStuff
 {
     public class SuperList : List<double>
     {
-        
+        public void GetMinMax1
+        (ref List<double> list, out double min, out double max)
+        {
+            List<double> sortList = list;
+            sortList.Sort();
+            min = sortList[0];
+            max = sortList[list.Count-1];
+        }
     }
 }
