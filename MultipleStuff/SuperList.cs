@@ -30,9 +30,11 @@ namespace MultipleStuff
 
             return Tuple.Create(min, max);
         }
-        public void GetMinMax4()
+        public (double min, double max) GetMinMax4()
         {
+            GetMinMax1(out min, out max);
 
+            return (min, max);
         }
     }
 

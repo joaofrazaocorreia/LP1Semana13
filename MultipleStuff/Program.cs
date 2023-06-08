@@ -44,6 +44,9 @@ namespace MultipleStuff
                         break;
                         
                     case 3:
+                        (double min, double max) valueTuple = list.GetMinMax4();
+                        min = valueTuple.min;
+                        max = valueTuple.max;
                         break;
                 }
                 Console.WriteLine($"{min}, {max}");
