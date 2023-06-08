@@ -38,6 +38,9 @@ namespace MultipleStuff
                         break;
 
                     case 2:
+                        Tuple<double, double> tuple = list.GetMinMax3();
+                        min = tuple.Item1;
+                        max = tuple.Item2;
                         break;
                         
                     case 3:
