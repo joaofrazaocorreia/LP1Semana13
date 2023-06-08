@@ -6,7 +6,15 @@ namespace Palindrome
     {
         static void Main(string[] args)
         {
-            
+            foreach(string s in args)
+            {
+                if (CheckPalindrome(s))
+                    Console.WriteLine($"{s} is a palindrome!");
+
+                else Console.WriteLine($"{s} is not a palindrome!");
+            }
+            string nullstring = null;
+            CheckPalindrome(nullstring);
         }
         private static bool CheckPalindrome(string s)
         {
