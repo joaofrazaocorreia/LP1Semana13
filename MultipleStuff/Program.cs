@@ -11,8 +11,7 @@ namespace MultipleStuff
         {
             Console.WriteLine("Hello, World!");
 
-            List<double> list = new List<double>();
-            SuperList superList = new SuperList();
+            SuperList list = new SuperList();
 
             list.Add(2.0f);
             list.Add(1.0f);
@@ -29,11 +28,11 @@ namespace MultipleStuff
                 switch(i)
                 {
                     case 0:
-                        superList.GetMinMax1(ref list, out min, out max);
+                        list.GetMinMax1(out min, out max);
                         break;
 
                     case 1:
-                        MinMaxStruct minmaxStruct = SuperList.GetMinMax2(list);
+                        MinMaxStruct minmaxStruct = list.GetMinMax2();
                         min = minmaxStruct.Min;
                         max = minmaxStruct.Max;
                         break;
