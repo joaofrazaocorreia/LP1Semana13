@@ -33,4 +33,15 @@ namespace MultipleStuff
 
         }
     }
+
+    public struct MinMaxStruct
+    {
+        public double Min { get; }
+        public double Max { get; }
+        public MinMaxStruct(double min, double max)
+        {
+            Min = min;
+            Max = max;
+        }
+    }
 }
