@@ -15,5 +15,17 @@ namespace MultipleStuff
             min = sortList[0];
             max = sortList[list.Count-1];
         }
+        public void GetMinMax2()
+        {
+
+        }
+        public void GetMinMax3()
+        {
+
+        }
+        public void GetMinMax4()
+        {
+
+        }
     }
 }
